@@ -153,21 +153,21 @@ AI-Powered Decision Interface
 ## 📁 Project Structure
 
 ```
-
-MarketLens/
-│
-├── data/
-│   ├── raw.json
-│   ├── enriched.json
-│   ├── final_features.json
-│   └── scored_data.json
+MarketLens-Repo/
 │
 ├── images/
 │   ├── home_page.png
 │   ├── processing.png
 │   └── chat.png
 │
-├── scripts/
+├── MarketLens/
+│   │
+│   ├── data/
+│   │   ├── raw.json
+│   │   ├── enriched.json
+│   │   ├── final_features.json
+│   │   └── scored_data.json
+│   │
 │   ├── data_extraction.py (redacted)
 │   ├── sentiment_analysis.py
 │   ├── feature_engineering.py
@@ -177,8 +177,9 @@ MarketLens/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
-
-```
+│
+├── README.md
+└── LICENSE
 
 ---
 
@@ -187,7 +188,7 @@ MarketLens/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/your-username/MarketLens.git
+git clone https://github.com/SHAIMOOM251283/MarketLens
 cd MarketLens
 ```
 
@@ -216,7 +217,7 @@ pip install -r requirements.txt
 The system uses preprocessed datasets for inference.
 
 ```bash
-python scripts/app.py
+python app.py
 ```
 
 Then open:
