@@ -233,7 +233,7 @@ http://127.0.0.1:5000
 *Home Page (Data Upload Interface)*
 ![v1 Home Page](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/home_page.png)
 
-*“Processing Dashboard” overlay*
+*Processing Dashboard overlay*
 ![v1 Indexing](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/processing.png)
 
 *AI Chat & Decision Interface*
