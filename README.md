@@ -214,6 +214,8 @@ pip install -r requirements.txt
 
 ### 4. Run the application
 
+⚠️ The system is designed to work with structured JSON datasets generated from the MarketLens data pipeline. Ensure the input file follows the schema produced by the data extraction and processing stages.
+
 The system uses preprocessed datasets for inference.
 
 ```bash
