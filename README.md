@@ -229,14 +229,14 @@ http://127.0.0.1:5000
 
 ## 🖼️ Interface Preview
 
-![v1 Home Page](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/home_page.png)
 *Home Page (Data Upload Interface)*
+![v1 Home Page](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/home_page.png)
 
-![v1 Indexing](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/processing.png)
 *“Processing Dashboard” overlay*
+![v1 Indexing](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/processing.png)
 
-![v1 Sample Q\&A](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/chat_interface.png)
 *AI Chat & Decision Interface*
+![v1 Sample Q\&A](https://github.com/SHAIMOOM251283/MarketLens/blob/main/images/chat_interface.png)
 
 ---
 
