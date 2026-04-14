@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+  font-family: 'Inter', system_ui, sans-serif;
+}
+
+#drop-zone {
+  transition: all 0.3s ease;
+}
+
+#drop-zone:hover {
+  background-color: rgba(34, 211, 238, 0.05);
+  border-color: #22d3ee;
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 14px 18px;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+.user-bubble {
+  background-color: #22d3ee;
+  color: black;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.bot-bubble {
+  background-color: #1f2937;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}

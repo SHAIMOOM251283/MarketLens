@@ -1,0 +1,33 @@
+# MarketLens - Requirements
+
+# Core Web Framework
+flask==3.0.3
+
+# Scraping
+playwright==1.48.0
+playwright-stealth==1.0.6
+
+# Data Processing & Analysis
+pandas==2.2.2
+
+# NLP & Sentiment Analysis
+textblob==0.18.0.post0
+
+# RAG & LLM Integration
+langchain==0.3.4
+langchain-core==0.3.12
+langchain-community==0.3.3
+langchain-ollama==0.2.0
+langchain-chroma==0.1.4
+langchain-text-splitters==0.3.0
+
+# Vector Database
+chromadb==0.5.11
+
+# Utilities
+werkzeug==3.0.3
+asyncio==3.4.3
+nest-asyncio==1.6.0
+
+# Optional: For better JSON handling and progress
+tqdm==4.66.5

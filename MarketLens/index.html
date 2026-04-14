@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MarketLens</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-cyan-500 rounded-lg flex items-center justify-center text-black font-bold">M</div>
+        <h1 class="text-2xl font-semibold tracking-tight">MarketLens</h1>
+      </div>
+      <div class="text-sm text-gray-400">Product Intelligence from E-commerce Data</div>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-6 py-12">
+
+    <!-- Hero / Upload Section -->
+    <div id="upload-section" class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Discover Market Insights</h2>
+      <p class="text-gray-400 text-lg mb-8">Upload your scraped product data and ask anything</p>
+      
+      <div id="drop-zone" 
+           class="border-2 border-dashed border-gray-700 hover:border-cyan-500 rounded-2xl p-12 transition-all cursor-pointer">
+        <input type="file" id="file-input" accept=".json" class="hidden"/>
+        <div class="space-y-4">
+          <div class="mx-auto w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center text-3xl">📊</div>
+          <p class="text-lg">Drop your JSON file here or click to upload</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat-section" class="hidden">
+      <div class="flex gap-8">
+
+        <!-- Sidebar -->
+        <div class="w-80 bg-gray-900 rounded-3xl p-6 h-fit shrink-0">
+          <h3 class="text-lg font-semibold mb-4">MarketLens Analysis</h3>
+          <div id="file-info" class="text-sm text-gray-400 mb-6"></div>
+          
+          <div class="space-y-2 text-sm">
+            <button onclick="suggestQuestion('Which product has the highest demand?')" 
+                    class="w-full text-left px-4 py-3 hover:bg-gray-800 rounded-2xl transition">Highest Demand Product</button>
+            <button onclick="suggestQuestion('Which product has the best value for money?')" 
+                    class="w-full text-left px-4 py-3 hover:bg-gray-800 rounded-2xl transition">Best Value for Money</button>
+            <button onclick="suggestQuestion('Which product should I invest in?')" 
+                    class="w-full text-left px-4 py-3 hover:bg-gray-800 rounded-2xl transition">Investment Recommendation</button>
+            <button onclick="suggestQuestion('What are the common complaints?')" 
+                    class="w-full text-left px-4 py-3 hover:bg-gray-800 rounded-2xl transition">Common Complaints</button>
+          </div>
+        </div>
+
+        <!-- Much Wider & Taller Chat Area -->
+        <div class="flex-1 max-w-[960px]">
+          <div id="chat-window" 
+               class="bg-gray-900 rounded-3xl h-[680px] p-8 overflow-y-auto mb-4 space-y-6">
+               <!-- Increased height from 560px → 680px -->
+          </div>
+          
+          <!-- Input area (kept at same width as chat window) -->
+          <div class="max-w-[960px]">
+            <div class="flex gap-3">
+              <input id="user-input" 
+                     type="text" 
+                     placeholder="Ask anything about the products..." 
+                     class="flex-1 bg-gray-800 border border-gray-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-cyan-500"/>
+              <button onclick="sendMessage()" 
+                      class="bg-cyan-500 hover:bg-cyan-600 text-black font-medium px-8 rounded-2xl transition">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Loading Overlay -->
+  <div id="loading-overlay" class="hidden fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center">
+    <div class="text-center">
+      <div class="w-16 h-16 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
+      <div id="loading-text" class="text-xl font-medium text-gray-100">Processing your data...</div>
+      <p class="text-sm text-gray-400 mt-2">This may take a few moments</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
