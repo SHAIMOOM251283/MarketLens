@@ -26,8 +26,3 @@ chromadb==0.5.11
 
 # Utilities
 werkzeug==3.0.3
-asyncio==3.4.3
-nest-asyncio==1.6.0
-
-# Optional: For better JSON handling and progress
-tqdm==4.66.5
