@@ -117,16 +117,18 @@ MarketLens is designed for **market opportunity and product investment analysis*
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-- Python
-- Flask
-- Pandas
-- LangChain
-- ChromaDB
-- Ollama (LLM + embeddings)
-- Playwright (stealth-enabled browser automation)
-- Tailwind CSS
+* **Python**
+* **Playwright + Playwright-Stealth**
+* **TextBlob (Sentiment Analysis)**
+* **Flask**
+* **Pandas**
+* **LangChain**
+* **ChromaDB (Vector Database)**
+* **Ollama (LLM + Embeddings)**
+* **LLM Application Architecture (Hybrid RAG)**
+* **Tailwind CSS**
 
 ---
 
